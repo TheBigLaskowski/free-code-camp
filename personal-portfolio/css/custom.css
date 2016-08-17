@@ -1,6 +1,8 @@
-margin {
-    top: 10px;
+body {
+    padding-top: 50px;
+    margin: 10px;
+    font-family: 'Neuton', serif;
 }
-navbar {
-    text-align: right;
+nav {
+    font-family: 'Montserrat', sans-serif;
 }
