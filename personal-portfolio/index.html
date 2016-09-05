@@ -9,15 +9,22 @@
     <title>Personal Portfolio</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Neuton" rel="stylesheet">
+
+    <!-- Custom Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
 <div class="container-fluid">
     <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container-fluid" id="navfluid">
-            <div class="navbar-header">
+            <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -28,10 +35,10 @@
             </div>
             <div class="collapse navbar-collapse navbar-right" id="navigationbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#section1">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Portfolio</a></li>
-                    <li><a href="#section4">Contact</a></li>
+
+                    <li class="page-scroll"><a href="#about">About</a></li>
+                    <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+                    <li class="page-scroll"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -40,32 +47,115 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid">
-        <h1>Hello, world!</h1>
 
-        <div id="section1">
-            <h1>Joe Laskowski</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <img src="images/avatar-joe.jpg" class="img-fluid img-rounded pull-xs-right" alt="Section 1 Image">
-                <blockquote>random quote enter here</blockquote>
+        <div class="jumbotron" id="about">
+            <h1>Laskowski Web Development</h1>
+            <img class="img-responsive img-circle profile-img" src="images/joe-laskowski.png" alt="Joe Laskowski">
+            <p>Hello, I'm Joe Laskowski and I am an up and coming web developer. Building websites since 2008 with CMS systems like Wordpress and Magento, I'm finaly learning to code my own themes and websites from scratch. Currently working on a full stack
+                web developer certification from
+                <a href="https://www.freecodecamp.com">Free Code Camp</a>. I'm also a big Linux nerd.
+
+                <blockquote>
+                    <p>Change the lighting to something erotic, because it's about to get pretty f***ing erotic in here.</p>
+                    <footer>Erlich Bachman, Silicon Valley. 2014</footer>
+                </blockquote>
             </p>
+            <p><span class="glyphicon glyphicon-console"> sudo apt-get install dev-skills</span></p>
         </div>
-        <div id="section2">
-            <h1>Section 2</h1>
+        <div class="well" id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="container-fluid">
+                <div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/tribute-thumbnail.png" alt="Tribute Page">
+                            <div class="overlay">
+                                <h2>Tribute Page</h2>
+                                <a class="info" href="https://codepen.io/TheBigLaskowski/pen/dXZzkd">click here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/image-placeholder-2.png" alt="">
+                            <div class="overlay">
+                                <h2>Untitled Project</h2>
+                                <a class="info" href="#">click here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/image-placeholder-2.png" alt="">
+                            <div class="overlay">
+                                <h2>Untitled Project</h2>
+                                <a class="info" href="#">click here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/image-placeholder-2.png" alt="">
+                            <div class="overlay">
+                                <h2>Untitled Project</h2>
+                                <a class="info" href="#">click here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="well" id="contact">
+            <h1>Contact</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="container-fluid">
+    <div class="row">
+		<div class="sicon">
+
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+				<div class="icon-circle">
+					<a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+				<div class="icon-circle">
+					<a href="#" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+				<div class="icon-circle">
+					<a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+				<div class="icon-circle">
+					<a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
         </div>
-        <div id="section3">
-            <h1>Section 3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div id="section4">
-            <h1>Section 4</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">A Basic Panel</div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 </body>
+<footer>
+    <div id="footer" class="well">
+        <p>joe laskowski © 2016. All Rights All Rights All Rights Already</p>
+    </div>
+</footer>
 
 </html>
